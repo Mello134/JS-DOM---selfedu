@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>13</title>
+
+	<style type="text/css">
+		#main_menu{
+			margin: 10px;
+			padding: 0;
+			list-style: none;
+			font-size: 24px;
+			width: 200px;
+			background: #eee;
+			cursor: pointer;
+		}
+
+		#main_menu li {
+			margin-bottom: 10px;
+			padding: 5px;
+		}
+
+/*		hover - это сить, который меняется при наведении
+		когда пользователь наводит на элемент мышью, но не обязательно активирует его.*/
+		#main_menu li:hover {
+			background: #FF4EF5;
+		}
+	</style>
+</head>
+<body>
+
+
+<h1>Делигирование событий</h1>
+
+<!-- <ul id='main_menu'>
+	<li>Открыть</li>
+	<li>Сохранить</li>
+	<li>Рисовать</li>
+	<li>Редактировать</li>
+	<li>Настройки</li>
+</ul> -->
+
+<!-- кнопка скрыть открыть меню -->
+<p>
+	<input type="button" data-toggle-id="main_menu" value="Показать/Скрыть меню" />
+</p>
+
+
+<p><a href="13.html" data-toggle-id="main_menu">Показать/Скрыть меню</a>
+
+<p><a href="13.html" onclick="return false;" data-toggle-id="main_menu">Показать/Скрыть меню</a>
+
+<ul id='main_menu'>
+	<li data-command='open'>Открыть</li>
+	<li data-command='save'>Сохранить</li>
+	<li data-command='draw'>Рисовать</li>
+	<li data-command='edit'>Редактировать</li>
+	<li data-command='customize'>Настройки</li>
+</ul>
+
+<script src="js/13.js"></script>
+</body>
+</html>
