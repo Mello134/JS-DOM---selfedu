@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>18</title>
+</head>
+<body>
+
+<style type="text/css">
+	.error {
+		background: #CC0000;
+	}
+</style>
+
+</head>
+<body>
+
+
+<form name="reg">
+	<p><input name="user" value="" /></p>
+	<p>
+		<input name="sex" type="radio" checked />М
+		<input name="sex" type="radio" checked />Ж
+	</p>
+	<p>
+		Город:
+		<select name="city">
+			<option>Москва</option>
+			<option>Санкт-Петербург</option>
+			<option>Тверь</option>
+		</select>
+	</p>
+	<p>
+		Согласие <input type="checkbox" name="agree" />
+	</p>
+
+	<p>
+		<textarea name="about" rows="10" cols="30">О себе</textarea>
+	</p>
+	<p>
+		<input type="submit" name="submit">
+	</p>
+</form>
+
+
+<p onclick="sendForm()">Отправить форму</p>
+
+
+<script src="js/18.js"></script>
+</body>
+</html>
